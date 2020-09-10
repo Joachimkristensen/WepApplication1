@@ -19,14 +19,14 @@ namespace ProductionUnitTest
         { 
             _repository = new Mock<IProductRepository>();
 
-            List<Product> fakeproducts = new List<Product>{
+          /*  List<Product> fakeproducts = new List<Product>{
                 new Product {Name="Hammer", Price=121.50m, Category="Verktøy"},
                 new Product {Name="Vinkelsliper", Price=1520.00m, Category ="Verktøy"},
                 new Product {Name="Melk", Price=14.50m, Category ="Dagligvarer"},
                 new Product {Name="Kjøttkaker", Price=32.00m, Category ="Dagligvarer"},
                 new Product {Name="Brød", Price=25.50m, Category ="Dagligvarer"}
             };
-            _repository.Setup(x => x.GetAll()).Returns(fakeproducts);
+            _repository.Setup(x => x.GetAll()).Returns(fakeproducts); */
 
             var controller = new ProductController(_repository.Object);
 
